@@ -117,7 +117,7 @@ Upon successful retrieval, the API will return a response with status code 200 a
         "Name": "name",
         "username": "user_name",
         "bio": "user_bio",
-        "age":  user_age
+        "age":  "user_age"
     }
 ]
 ```
