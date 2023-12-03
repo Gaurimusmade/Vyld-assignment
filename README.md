@@ -28,7 +28,7 @@ npm install or yarn install
 
 3.**Create Database**
    - Click on the "New" button on the left sidebar.
-   - Enter a name for your database (e.g., `user_authentication_db`).
+   - Enter a name for your database (e.g., `vyld`).
    - Choose `utf8mb4_general_ci` as the collation.
    - Click "Create."
 
@@ -44,7 +44,7 @@ npm install or yarn install
    TOKEN_SECRET = "your secret string"
    DB_USER = "root" //your MySQL username
    DB_HOST = "localhost" 
-   DB_DATABASE = "user_authentication_db" //the database name you choose in 3rd step
+   DB_DATABASE = "vyld" //the database name you choose in 3rd step
    DB_PASSWORD = "" //password of your MySQL database
 
    ```
