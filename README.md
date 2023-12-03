@@ -1,5 +1,5 @@
 # Vyld-assignment
-Must to install node.js and xampp.
+Must to install node.js and xampp(Or MySQL Server).
 
 ## Setup 
 Open your terminal (cmd, powershell, git bash)
@@ -15,8 +15,11 @@ Install all required dependencies using `npm` or you can also use` yarn`:
 ```
 npm install or yarn install
 ```
+
+**You can either use MySQL Server.Here is database setup for XAMPP.**
+
 ## Setup Database
-1.**Start XAMPP and MySQL** 
+1.**Start XAMPP** 
    - Launch XAMPP Control Panel.
    - Start the Apache and MySQL services.
 
@@ -29,20 +32,21 @@ npm install or yarn install
    - Choose `utf8mb4_general_ci` as the collation.
    - Click "Create."
 
-4. **Import SQL file**
+4.**Import SQL file**
    - Select the newly created database from the left sidebar.
    - Click on the "Import" tab.
    - Select the provided SQL file (`vyld.sql`).
    - Click "Go" to import the SQL file.
 
-5. **Setup .env file** according to your local settings.
-```
-PORT = 5001 // choose the port for server to run
-TOKEN_SECRET = "your secret string"
-DB_USER = "root" //your MySQL username
-DB_HOST = "localhost" 
-DB_DATABASE = "user_authentication_db" //the database name you choose in 3rd step
-DB_PASSWORD = "" //password of your MySQL database
+5.**Setup .env file** according to your local settings.
+   ```
+   PORT = 5001 // choose the port for server to run
+   TOKEN_SECRET = "your secret string"
+   DB_USER = "root" //your MySQL username
+   DB_HOST = "localhost" 
+   DB_DATABASE = "user_authentication_db" //the database name you choose in 3rd step
+   DB_PASSWORD = "" //password of your MySQL database
+
    ```
 ## How to use 
 Now it's time to use API endpoints.
