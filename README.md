@@ -16,28 +16,33 @@ Install all required dependencies using `npm` or you can also use` yarn`:
 npm install or yarn install
 ```
 ## Setup Database
-1. **Create a database** with a name of your choice in mysql.
-```
-mysql=# CREATE DATABASE db_name;
-```
-2. **Import SQL file**, you will find vyld.sql file in our cloned folder "Vyld-assignment" .\
-   in terminal
-```
-mysql=# mysql -U username -d db_name -f "%path%\vyld.sql";
-```
-* Replace username with your MySQL database username.
-* Replace db_name with the name you choose in 1st step.
-* Replace %path% with the actual path to your cloned folder.
+1.**Start XAMPP and MySQL** 
+   - Launch XAMPP Control Panel.
+   - Start the Apache and MySQL services.
 
-3. **Setup .env file** according to your local settings.
+2.**Open PhpMyAdmin**
+   -Open your web browser and navigate to [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/).
+
+3.**Create Database**
+   - Click on the "New" button on the left sidebar.
+   - Enter a name for your database (e.g., `user_authentication_db`).
+   - Choose `utf8mb4_general_ci` as the collation.
+   - Click "Create."
+
+4. **Import SQL file**
+   - Select the newly created database from the left sidebar.
+   - Click on the "Import" tab.
+   - Select the provided SQL file (`vyld.sql`).
+   - Click "Go" to import the SQL file.
+
+5. **Setup .env file** according to your local settings.
 ```
-PORT = 8081 // choose the port for server to run
+PORT = 5001 // choose the port for server to run
 TOKEN_SECRET = "your secret string"
 DB_USER = "root" //your MySQL username
 DB_HOST = "localhost" 
-DB_DATABASE = "vyld" //the db_name you choose in 1st step
+DB_DATABASE = "user_authentication_db" //the database name you choose in 3rd step
 DB_PASSWORD = "" //password of your MySQL database
-PORT = 5001
    ```
 ## How to use 
 Now it's time to use API endpoints.
